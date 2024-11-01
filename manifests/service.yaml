@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: pipejetui2-ceaee-service
+spec:
+  type: NodePort
+  selector:
+    app: pipejetui2-ceaee
+  ports:
+    - protocol: TCP
+      port: 8096
+      targetPort: 3000
